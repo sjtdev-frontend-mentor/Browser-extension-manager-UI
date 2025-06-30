@@ -10,6 +10,7 @@
     <div class="flex items-center justify-between">
       <button
         class="h-[38px] w-[91px] rounded-3xl border border-stone-300 font-semibold transition-colors duration-150 hover:bg-red-700 hover:text-white focus:border-none focus:bg-neutral-300 focus:outline-2 focus:outline-offset-2 focus:outline-red-700 dark:border-[#494F5F] dark:font-medium dark:text-[#ECF3FD] dark:hover:bg-[#F55A56] dark:hover:text-[#04091C] dark:focus:bg-[#52576A] dark:focus:outline-[#D76667]"
+        @click="removeCard(card)"
       >
         Remove
       </button>
@@ -34,4 +35,9 @@
 
 <script setup>
 const card = defineModel();
+const emit = defineEmits(["remove"]);
+
+function removeCard(card) {
+  emit("remove", card);
+}
 </script>
