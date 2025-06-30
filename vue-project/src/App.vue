@@ -22,7 +22,7 @@
       </button>
     </div>
   </div>
-  <div class="grid grid-cols-[repeat(auto-fill,minmax(343px,1fr))] justify-items-center gap-3 md:grid-cols-[repeat(auto-fill,minmax(382px,1fr))]">
+  <div class="grid grid-cols-[repeat(auto-fill,minmax(343px,1fr))] justify-items-center gap-3 md:grid-cols-[repeat(auto-fill,minmax(382px,1fr))] mb-10">
     <Card @remove="removeCard" v-for="(card, index) in cards" :key="index" v-model="cards[index]" v-show="shouldShowItem(card)" class="w-full max-w-[343px] md:max-w-[382px]" />
   </div>
 </template>

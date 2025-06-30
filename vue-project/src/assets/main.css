@@ -3,11 +3,14 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 #app {
-  @apply md:w-[1180px];
+  @apply md:w-[1180px] pb-10;
 }
 
 body {
-  @apply bg-linear-to-b from-cyan-50 to-blue-50;
+  @apply bg-linear-to-b bg-cover from-cyan-50 to-blue-50;
   @apply dark:from-[#04091C] dark:to-[#0A1542];
-  @apply flex h-screen justify-center transition-colors px-12;
+  @apply flex justify-center transition-colors px-12;
+  
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
