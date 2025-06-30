@@ -1,11 +1,11 @@
 <template>
   <header class="my-10 flex h-16 w-full items-center justify-between rounded-2xl border-stone-400 bg-slate-50 p-3 shadow-[0_0_8px] shadow-stone-400/40 dark:bg-[#1F2535]">
-    <img :src="`/images/logo-${darkMode ? 'dark' : 'light'}.svg`" alt="" />
+    <img :src="`images/logo-${darkMode ? 'dark' : 'light'}.svg`" alt="" />
     <button
       class="flex h-10 w-10 items-center justify-center rounded-xl bg-neutral-200 transition-colors duration-150 hover:bg-stone-400 focus:outline-2 focus:outline-offset-2 focus:outline-red-700 dark:bg-[#2F354C] dark:hover:bg-[#525868] dark:focus:bg-[#56586A] dark:focus:outline-[#D76667]"
       @click="toggleDarkMode()"
     >
-      <img class="h-5 w-5" :src="`/images/icon-${darkMode ? 'sun' : 'moon'}.svg`" alt="" />
+      <img class="h-5 w-5" :src="`images/icon-${darkMode ? 'sun' : 'moon'}.svg`" alt="" />
     </button>
   </header>
   <div class="my-6 flex flex-col items-center justify-between gap-6 md:flex-row">
